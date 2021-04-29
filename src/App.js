@@ -3,13 +3,74 @@ import './App.scss';
 import logo from '../src/assets/pineapple.svg'
 import QS from '../src/assets/qs-screen.png';
 import mouse from '../src/assets/mouse-scroll.svg';
+/* import { gsap } from "gsap"; */
+/* import { ScrollTrigger } from "gsap/ScrollTrigger"; */
+
+
+
+/* gsap.registerPlugin(ScrollTrigger);
+
+let sections = gsap.utils.toArray(".landingpage"); */
+
+/* gsap.to(sections, {
+  xPercent: -100 * (sections.length - 1),
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".horizontal-page",
+    pin: true,
+    scrub: 1,
+    snap: 1 / (sections.length - 1),
+    // base vertical scrolling on how wide the container is so it feels more natural.
+    end: () => "+=" + document.querySelector(".horizontal-page").offsetWidth
+  }
+}); */
+
+/* gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".horizontal-page",
+      pin: true,
+      scrub: 1,
+      snap: 1 / (sections.length - 1),
+      // base vertical scrolling on how wide the container is so it feels more natural.
+      end: () => "+=" + (".landingpage").offsetWidth
+    }
+  }); */
+
+/* gsap.to(sections, {
+    x: () => -(sections.scrollWidth - document.documentElement.clientWidth) + "px",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".horizontal-page",
+      invalidateOnRefresh: true,
+      pin: true,
+      scrub: 1,
+      end: () => "+=" + (".horizontal-page").offsetWidth
+    }
+  }) */
+
+
+/* gsap.to(sections, {
+    x: () => -(sections.scrollWidth - document.documentElement.clientWidth) + "px",
+    ease: "none",
+    scrollTrigger: {
+      trigger: ".horizontal-page",
+      invalidateOnRefresh: true,
+      pin: true,
+      scrub: 1,
+      end: () => "+=" + sections.offsetWidth
+    }
+  }) */
+
 
 
 function App() {
+
+    
     return (
         <div className="horizontal-page">
-        
-        <div className="HW_landingpage">
+        <section className="landingpage">
             <div className="pineapple-div">
                 <img className="pineapple" src={logo} alt="Pineapple-logo" />
             </div>
@@ -20,16 +81,20 @@ function App() {
             <div className="mouse-div">
                 <img className="mouse-img" src={mouse} alt="mouse-scroll" />
             </div>
-        </div>
-        <div className="qs_landingpage">
-            <img className="qs_landingpage_screen" src={QS} alt="Quick Solution page"/>
-            <div className="qs_case_container">
-                <div className="qs_case_title">01 - Quick Solution</div>
-                <div className="qs_case_hastags">#HTML, #CSS, #Javascript, #ANIMATIONS</div>
-                <div className="qs_case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</div>
+        </section>
+
+        <section className="landingpage">
+            <img className="landingpage_screen" src={QS} alt="Quick Solution page"/>
+            <div className="case_container">
+                <div className="case_title">01 - Quick Solution</div>
+                <div className="case_hastags">#HTML, #CSS, #Javascript, #ANIMATIONS</div>
+                <div className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</div>
+                <div className="visit-button_container">
+                    <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
+                </div>
+            
             </div>
-        </div>
-        
+        </section>
         
         
         </div>
@@ -38,3 +103,10 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+/*   // scroll down arrow animation (animation to the mouse)
+gsap.to(".arrow", {y: 12, ease: "power1.inOut", repeat: -1, yoyo: true}); */

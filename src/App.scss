@@ -23,16 +23,20 @@ $rightside-button:#61FFD0; /* 100% right */
 html {
         font-family: 'Poppins', sans-serif;
         font-size: 62.5%;
-        overflow: scroll;
-/*         overflow-y: hidden;
-        overflow-x: hidden; */
+        /* overflow: scroll; */
+        /* overflow-y: scroll; */
+        /* overflow-x: hidden;  */
+      /*   overflow-x: scroll; */
     }
+
+
 
 .horizontal-page {
         width: 600vw;
-        height: 98vh;
+     /*    height: 98vh; */
         display: flex;
-        flex-wrap: nowrap;}
+        flex-wrap: nowrap;
+}
 
 .pineapple-div {
         width: 100vw;
@@ -46,9 +50,10 @@ html {
         }
 }
 
-.HW_landingpage {
+.landingpage {
       /*   height: 100vh; */
-        width: 100vw;
+      width: 100vw;
+        /* width: 100%; */
 }
 
 .HW_container {
@@ -76,21 +81,17 @@ html {
         }
 }
 
-.qs_landingpage {
+.landingpage_screen {
         width: 100vw;
-      /*   height: 100vh; */
+        height: 100vh;
+ }
 
-        .qs_landingpage_screen {
-                width: 100%;
-                height: 100%;
-        }
-}
 
-.qs_case_container {
+.case_container {
         /* background-color: $QS-color; */
         position: absolute;
         width: 30vw;
-        height: 100%;
+        height: 100vh;
         top: 0;
         left: 170vw;
         background: linear-gradient(135deg, $QS-color 50%, $Quire-color 100%);
@@ -100,21 +101,21 @@ html {
         flex-direction: column;
         
 
-        .qs_case_title {
+        .case_title {
                 color: $black;
                 margin-top: 40%;
                 font-size: 2.4rem;
                 font-weight: 700;
         }
 
-        .qs_case_hastags {
+        .case_hastags {
                 color: $black;
                 margin-top: 15%;
                 font-size: 2rem;
                 font-weight: 400;
         }
 
-        .qs_case_context {
+        .case_context {
                 color: $black;
                 margin-top: 15%;
                 font-size: 2rem;
@@ -122,4 +123,29 @@ html {
                 padding-right: 8%;
                 padding-left: 10%;
         }
+}
+
+.visit-button_container{
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 15%;
+
+        .visit-button {
+                border: none;
+                border-radius: 3rem;
+                width: 9rem;
+                height: 3.5rem;
+                background: linear-gradient(135deg, $leftside-button 33%, $rightside-button 100%);
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fcfcfc;
+                filter: drop-shadow(0px 6px 4px #619cff);
+                cursor: pointer;
+
+}
 }
