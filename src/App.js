@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.scss';
+import Mouse from './component/Mouse';
 import logo from '../src/assets/pineapple.svg'
 import QS from '../src/assets/qs-screen.png';
 import Quire from '../src/assets/quire-screen.png';
 import SSS from '../src/assets/service-security-sweden.png';
 import KYH from '../src/assets/kyh-onboarding.png';
-import mouse from '../src/assets/mouse-scroll.svg';
 /* import { gsap } from "gsap"; */
 /* import { ScrollTrigger } from "gsap/ScrollTrigger"; */
 
@@ -66,6 +66,10 @@ let sections = gsap.utils.toArray(".landingpage"); */
     }
   }) */
 
+  /* gsap.fromTo('#cursor', {autoAlpha: 0, x:-10}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)});
+
+let texteditor = gsap.to("#text", {text: {value: "this is a custom text"}, duration: 5, delay: 1, ease: "none"})
+ */
 
 
 function App() {
@@ -78,12 +82,11 @@ function App() {
                 <img className="pineapple" src={logo} alt="Pineapple-logo" />
             </div>
             <div className="HW_container">
+              <texteditor/>
                 <div className="HW_container_context">Hello World!</div>
                 <div className="HW_container_context">My name is Robin and im a Front-end developer.</div>
             </div>
-            <div className="mouse-div">
-                <img className="mouse-img" src={mouse} alt="mouse-scroll" />
-            </div>
+            <Mouse/>
         </section>
 
         <section className="landingpage">
