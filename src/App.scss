@@ -11,6 +11,17 @@ background: rgb(97,156,255);
 background: linear-gradient(45deg, rgba(97,156,255,1) 25%, rgba(97,255,208,1) 100%);*/
 $rightside-button:#61FFD0; /* 100% right */
 
+@mixin case_container {
+        position: absolute;
+        width: 30vw;
+        height: 100vh;
+/*         top: 0;
+        left: 170vw;
+        background: linear-gradient(135deg, $QS-color 50%, $Quire-color 100%); */
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+}
 
 
 
@@ -87,19 +98,37 @@ html {
  }
 
 
-.case_container {
-        /* background-color: $QS-color; */
-        position: absolute;
-        width: 30vw;
-        height: 100vh;
+.qs_case_container {
+        @include case_container();
         top: 0;
         left: 170vw;
         background: linear-gradient(135deg, $QS-color 50%, $Quire-color 100%);
-        display: flex;
-        align-items: center;
-        /* justify-content: space-around; */
-        flex-direction: column;
-        
+
+}
+
+.quire_case_container {
+        @include case_container();
+        top: 0;
+        left: 270vw;
+        background: linear-gradient(135deg, $Quire-color 40%, $SSS-color 100%);
+
+}
+
+.sss_case_container {
+        @include case_container();
+        top: 0;
+        left: 370vw;
+        background: linear-gradient(135deg, $SSS-color 30%, $KYH-color 100%);
+
+}
+
+.kyh_case_container {
+        @include case_container();
+        top: 0;
+        left: 470vw;
+        background: linear-gradient(135deg, $KYH-color 30%, $leftside-button 125%);
+
+}
 
         .case_title {
                 color: $black;
@@ -108,7 +137,7 @@ html {
                 font-weight: 700;
         }
 
-        .case_hastags {
+        .case_hashtags {
                 color: $black;
                 margin-top: 15%;
                 font-size: 2rem;
@@ -123,29 +152,29 @@ html {
                 padding-right: 8%;
                 padding-left: 10%;
         }
-}
 
-.visit-button_container{
-        width: 50%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        height: 15%;
 
-        .visit-button {
-                border: none;
-                border-radius: 3rem;
-                width: 9rem;
-                height: 3.5rem;
-                background: linear-gradient(135deg, $leftside-button 33%, $rightside-button 100%);
-                font-family: 'Poppins', sans-serif;
-                font-size: 1.2rem;
-                font-weight: 400;
-                text-transform: uppercase;
-                text-align: center;
-                color: #fcfcfc;
-                filter: drop-shadow(0px 6px 4px #619cff);
-                cursor: pointer;
+        .visit-button_container{
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                height: 15%;
 
-}
-}
+                .visit-button {
+                        border: none;
+                        border-radius: 3rem;
+                        width: 9rem;
+                        height: 3.5rem;
+                        background: linear-gradient(135deg, $leftside-button 33%, $rightside-button 100%);
+                        font-family: 'Poppins', sans-serif;
+                        font-size: 1.2rem;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: #fcfcfc;
+                        filter: drop-shadow(0px 6px 4px #619cff);
+                        cursor: pointer;
+
+                }
+        }
