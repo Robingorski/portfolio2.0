@@ -5,17 +5,21 @@ $QS-color: #8062FA;
 $Quire-color: #9C62FA;
 $SSS-color: #C67FF4;
 $KYH-color: #FF96F0;
+$About-me: #FF8AB4;
 $active-color: #61FFD0;
-$leftside-button:#619CFF; /* 45¤ and from 25%  
+$leftside-button:#619CFF;
+/* 45¤ and from 25%  
 background: rgb(97,156,255);
 background: linear-gradient(45deg, rgba(97,156,255,1) 25%, rgba(97,255,208,1) 100%);*/
-$rightside-button:#61FFD0; /* 100% right */
+$rightside-button:#61FFD0;
+/* 100% right */
+$linkcolor: #434cfc;
 
 @mixin case_container {
         position: absolute;
         width: 30vw;
         height: 100vh;
-/*         top: 0;
+        /*         top: 0;
         left: 170vw;
         background: linear-gradient(135deg, $QS-color 50%, $Quire-color 100%); */
         display: flex;
@@ -23,6 +27,18 @@ $rightside-button:#61FFD0; /* 100% right */
         flex-direction: column;
 }
 
+@mixin hw_context {
+        color: $black;
+        font-size: 3rem;
+        font-weight: 300;
+}
+
+@mixin page_indicators {
+        width: 2.5rem;
+        height: 1rem;
+        border-radius: 1rem;
+        margin: 0.5rem;
+}
 
 
 * {
@@ -37,14 +53,14 @@ html {
         /* overflow: scroll; */
         /* overflow-y: scroll; */
         /* overflow-x: hidden;  */
-      /*   overflow-x: scroll; */
-    }
+        /*   overflow-x: scroll; */
+}
 
 
 
 .horizontal-page {
         width: 600vw;
-     /*    height: 98vh; */
+        /*    height: 98vh; */
         display: flex;
         flex-wrap: nowrap;
 }
@@ -57,13 +73,13 @@ html {
         padding: 2% 0% 0% 2%;
 
         .pineapple {
-        width: 5rem;
+                width: 5rem;
         }
 }
 
 .landingpage {
-      /*   height: 100vh; */
-      width: 100vw;
+        /*   height: 100vh; */
+        width: 100vw;
         /* width: 100%; */
 }
 
@@ -76,9 +92,11 @@ html {
         flex-direction: column;
 
         .HW_container_context {
-                color: $black;
-                font-size: 3rem;
-                font-weight: 300;
+                @include hw_context();
+        }
+
+        .HW_context {
+                @include hw_context();
         }
 }
 
@@ -92,10 +110,43 @@ html {
         }
 }
 
+.page_indicator_container {
+        width: 100vw;
+        height: 2vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .page_indicator-qs {
+                @include page_indicators ();
+                background-color: $QS-color;
+        }
+
+        .page_indicator-quire {
+                @include page_indicators ();
+                background-color: $Quire-color;
+        }
+
+        .page_indicator-sss {
+                @include page_indicators ();
+                background-color: $SSS-color;
+        }
+
+        .page_indicator-kyh {
+                @include page_indicators ();
+                background-color: $KYH-color;
+        }
+
+        .page_indicator-about_me {
+                @include page_indicators ();
+                background-color: $About-me;
+        }
+}
+
 .landingpage_screen {
         width: 100vw;
         height: 100vh;
- }
+}
 
 
 .qs_case_container {
@@ -130,51 +181,97 @@ html {
 
 }
 
-        .case_title {
-                color: $black;
-                margin-top: 40%;
-                font-size: 2.4rem;
+.case_title {
+        color: $black;
+        margin-top: 40%;
+        font-size: 2.4rem;
+        font-weight: 700;
+}
+
+.case_hashtags {
+        color: $black;
+        margin-top: 15%;
+        font-size: 2rem;
+        font-weight: 400;
+}
+
+.case_context {
+        color: $black;
+        margin-top: 15%;
+        font-size: 2rem;
+        font-weight: 400;
+        padding-right: 8%;
+        padding-left: 10%;
+}
+
+
+.visit-button_container {
+        width: 50%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 15%;
+
+        .visit-button {
+                border: none;
+                border-radius: 3rem;
+                width: 9rem;
+                height: 3.5rem;
+                background: linear-gradient(135deg, $leftside-button 33%, $rightside-button 100%);
+                font-family: 'Poppins', sans-serif;
+                font-size: 1.2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-align: center;
+                color: #fcfcfc;
+                filter: drop-shadow(0px 6px 4px #619cff);
+                cursor: pointer;
+
+        }
+}
+
+
+.about-me {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .selfie-img {
+                width: 25rem;
+        }
+
+        .about-me-text_container {
+                margin-left: 2%;
+                width: 40rem;
+        }
+
+        h4 {
+                font-size: 4.5rem;
                 font-weight: 700;
-        }
-
-        .case_hashtags {
                 color: $black;
-                margin-top: 15%;
-                font-size: 2rem;
-                font-weight: 400;
         }
 
-        .case_context {
+        .about-me-text_skills {
+                margin-top: 3%;
+        }
+
+        .about-me_context {
+                font-size: 1rem;
+                font-weight: 500;
                 color: $black;
-                margin-top: 15%;
-                font-size: 2rem;
-                font-weight: 400;
-                padding-right: 8%;
-                padding-left: 10%;
         }
 
+        .about-me-text_contact {
+                margin-top: 3%;
 
-        .visit-button_container{
-                width: 50%;
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                height: 15%;
-
-                .visit-button {
-                        border: none;
-                        border-radius: 3rem;
-                        width: 9rem;
-                        height: 3.5rem;
-                        background: linear-gradient(135deg, $leftside-button 33%, $rightside-button 100%);
-                        font-family: 'Poppins', sans-serif;
-                        font-size: 1.2rem;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                        text-align: center;
-                        color: #fcfcfc;
-                        filter: drop-shadow(0px 6px 4px #619cff);
-                        cursor: pointer;
-
+                .about-me_links {
+                        color: $linkcolor;
+                        text-decoration: none;
+                        font-size: 1rem;
+                        letter-spacing: 0.04rem;
+                        font-weight: 500;
                 }
         }
+}
