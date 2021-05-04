@@ -10,90 +10,15 @@ import KYH from '../src/assets/kyh-onboarding.png';
 import selfie from '../src/assets/selfie.jpg';
 
 
-
-
-
-
-
-/* import { gsap } from "gsap"; */
-/* import { ScrollTrigger } from "gsap/ScrollTrigger"; */
-
-
-
-/* gsap.registerPlugin(ScrollTrigger);
-
-let sections = gsap.utils.toArray(".landingpage"); */
-
-/* gsap.to(sections, {
-  xPercent: -100 * (sections.length - 1),
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".horizontal-page",
-    pin: true,
-    scrub: 1,
-    snap: 1 / (sections.length - 1),
-    // base vertical scrolling on how wide the container is so it feels more natural.
-    end: () => "+=" + document.querySelector(".horizontal-page").offsetWidth
-  }
-}); */
-
-/* gsap.to(sections, {
-    xPercent: -100 * (sections.length - 1),
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".horizontal-page",
-      pin: true,
-      scrub: 1,
-      snap: 1 / (sections.length - 1),
-      // base vertical scrolling on how wide the container is so it feels more natural.
-      end: () => "+=" + (".landingpage").offsetWidth
-    }
-  }); */
-
-/* gsap.to(sections, {
-    x: () => -(sections.scrollWidth - document.documentElement.clientWidth) + "px",
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".horizontal-page",
-      invalidateOnRefresh: true,
-      pin: true,
-      scrub: 1,
-      end: () => "+=" + (".horizontal-page").offsetWidth
-    }
-  }) */
-
-
-/* gsap.to(sections, {
-    x: () => -(sections.scrollWidth - document.documentElement.clientWidth) + "px",
-    ease: "none",
-    scrollTrigger: {
-      trigger: ".horizontal-page",
-      invalidateOnRefresh: true,
-      pin: true,
-      scrub: 1,
-      end: () => "+=" + sections.offsetWidth
-    }
-  }) */
-
-  /* gsap.fromTo('#cursor', {autoAlpha: 0, x:-10}, {autoAlpha: 1, duration: 0.5, repeat: -1, ease: SteppedEase.config(1)});
-
-let texteditor = gsap.to("#text", {text: {value: "this is a custom text"}, duration: 5, delay: 1, ease: "none"})
- */
-
-
 function App() {
 
-    
     return (
-        <div className="horizontal-page">
+        <div  className="horizontal-page">
         <section className="landingpage">
             <div className="pineapple-div">
                 <img className="pineapple" src={logo} alt="Pineapple-logo" />
             </div>
-            <div className="HW_container">
-              <Textwriter/>
-                <div className="HW_container_context">My name is Robin and im a Front-end developer.</div>
-            </div>
+            <Textwriter/>
             <Mouse/>
             <div className="page_indicator_container">
               <div className="page_indicator-qs"></div>

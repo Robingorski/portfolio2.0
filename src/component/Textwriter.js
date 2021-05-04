@@ -1,24 +1,27 @@
 import gsap from "gsap";
+import { useRef, useEffect } from "react";
 import { TextPlugin } from "gsap/TextPlugin";
 
 gsap.registerPlugin(TextPlugin);
 
-/* 
-gsap.to("h1", {duration: 3, text: "Hello World!"}) */
-
-/* gsap.defaults({ease: "none"}); */
-
-/* const tx = gsap.timeline({repeat:3, repeatDelay:1, yoyo:true});
-tx.to("HW_container_context", {duration: 4, text:" is so much fun you should try it some time!"}) */
-
-/* gsap.to(".HW_container_context", {duration: 4, delay: 1, text: "Hello World!"}) */
-gsap.to(".HW_context", {duration: 2, text: "Hello World!", ease: "none"});
-
-
 
 function Textwriter() {
+    const text_hw = useRef(null);
+    const text_robin = useRef(null);
+  useEffect(() => {
+    gsap.to(".HW_context", {duration: 2, text: "Hello World!", ease: "none"});
+  }, []);
+  
+  useEffect(() => {
+    gsap.to(".HW_container_context", {duration: 8, delay: 2, text: "Im a Front-end developer, with passion for design and animations.", ease: "none"});
+  }, []);
+
+
 return (
-<div className=".HW_context" id="typewriter"></div>
+    <div className="HW_container">
+<div ref={text_hw} className="HW_context"></div>
+<div ref={text_robin} className="HW_container_context"></div>
+    </div>
 );
 }
 
