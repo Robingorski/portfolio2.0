@@ -46,7 +46,13 @@ $linkcolor: #434cfc;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        scrollbar-width: none;
 }
+
+*::-webkit-scrollbar {
+        width: 0px;
+}
+
 
 html {
         font-family: 'Poppins', sans-serif;
@@ -57,9 +63,6 @@ body {
         overflow-x: hidden;
         overflow-y: scroll;
       }
-
-
-
 
 .horizontal-page {
         width: 600vw;
@@ -87,8 +90,6 @@ body {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        position: relative;
-        position: sticky;
 }
 
 .HW_container {
@@ -120,13 +121,14 @@ body {
 }
 
 .page_indicator_container {
+      /*   display: none; */
+        overflow: hidden;
         width: 100vw;
         height: 2vh;
         display: flex;
         align-items: center;
         justify-content: center;
-/*         position: fixed;
-        z-index: 3; */
+        z-index: 9999;
 
         .page_indicator-qs {
                 @include page_indicators ();
@@ -151,6 +153,11 @@ body {
         .page_indicator-about_me {
                 @include page_indicators ();
                 background-color: $About-me;
+        }
+
+        .mover {
+                @include page_indicators();
+                background-color: $active-color;
         }
 }
 
