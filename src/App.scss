@@ -125,6 +125,8 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
+/*         position: fixed;
+        z-index: 3; */
 
         .page_indicator-qs {
                 @include page_indicators ();

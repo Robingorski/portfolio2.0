@@ -60,7 +60,7 @@ function App() {
             <img className="landingpage_screen" src={QS} alt="Quick Solution page"/>
             <div className="qs_case_container">
                 <h1 className="case_title">01 - Quick Solution</h1>
-                <p className="case_hashtags">#HTML, #CSS, #Javascript, #ANIMATIONS</p>
+                <p className="case_hashtags">#HTML, #CSS, #Javascript, #Animations</p>
                 <p className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</p>
                 <div className="visit-button_container">
                     <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
@@ -72,7 +72,7 @@ function App() {
             <img className="landingpage_screen" src={Quire} alt="Quire page"/>
             <div className="quire_case_container">
                 <h1 className="case_title">02 - Quire</h1>
-                <p className="case_hashtags">#HTML, #CSS, #Javascript, #ANIMATIONS</p>
+                <p className="case_hashtags">#HTML, #CSS, #Javascript, #Quill</p>
                 <p className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</p>
                 <div className="visit-button_container">
                     <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
@@ -84,10 +84,10 @@ function App() {
             <img className="landingpage_screen" src={SSS} alt="Service Security Sweden page"/>
             <div className="sss_case_container">
                 <h1 className="case_title">03 - Service Security Sweden</h1>
-                <p className="case_hashtags">#HTML, #CSS, #Javascript, #ANIMATIONS</p>
+                <p className="case_hashtags">#HTML, #CSS, #Javascript</p>
                 <p className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</p>
                 <div className="visit-button_container">
-                    <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
+                    <button className="visit-button" onClick={()=> window.open("http://www.servicesecurity.se/")}>Visit page</button>
                 </div>
             </div>
         </section>
@@ -96,7 +96,7 @@ function App() {
             <img className="landingpage_screen" src={KYH} alt="KYH page"/>
             <div className="kyh_case_container">
                 <h1 className="case_title">04 - KYH</h1>
-                <p className="case_hashtags">#HTML, #CSS, #Javascript, #ANIMATIONS</p>
+                <p className="case_hashtags">#React, Tailwind, Firebase, Sanity, Next.js</p>
                 <p className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</p>
                 <div className="visit-button_container">
                     <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
