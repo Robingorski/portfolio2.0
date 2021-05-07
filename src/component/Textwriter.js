@@ -9,11 +9,11 @@ function Textwriter() {
     const text_hw = useRef(null);
     const text_robin = useRef(null);
   useEffect(() => {
-    gsap.to(".HW_context", {duration: 2, text: "Hello World!", ease: "none"});
+    gsap.to(".HW_context", {duration: 2.5, text: "Hello World!", ease: "none"});
   }, []);
   
   useEffect(() => {
-    gsap.to(".HW_container_context", {duration: 8, delay: 2, text: "Im a Front-end developer, with passion for design and animations.", ease: "none"});
+    gsap.to(".HW_container_context", {duration: 8, delay: 2, text: "I'm a Front-end developer, with passion for design and animations.", ease: "none"});
   }, []);
 
 

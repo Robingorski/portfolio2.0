@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+$white: #fcfcfc;
 $black: #272727;
 $QS-color: #8062FA;
 $Quire-color: #9C62FA;
@@ -50,17 +51,19 @@ $linkcolor: #434cfc;
 html {
         font-family: 'Poppins', sans-serif;
         font-size: 62.5%;
-        /* overflow: scroll; */
-        /* overflow-y: scroll; */
-        /* overflow-x: hidden;  */
-        /*   overflow-x: scroll; */
 }
+
+body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
 
 
 
 .horizontal-page {
         width: 600vw;
-        /*    height: 98vh; */
+        height: 100vh;
         display: flex;
         flex-wrap: nowrap;
 }
@@ -78,13 +81,14 @@ html {
 }
 
 .landingpage {
-        /*   height: 100vh; */
         width: 100vw;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        /* width: 100%; */
+        position: relative;
+        position: sticky;
 }
 
 .HW_container {
@@ -157,7 +161,7 @@ html {
 .qs_case_container {
         @include case_container();
         top: 0;
-        left: 170vw;
+        left: 70vw;
         background: linear-gradient(135deg, $QS-color 50%, $Quire-color 100%);
 
 }
@@ -165,7 +169,7 @@ html {
 .quire_case_container {
         @include case_container();
         top: 0;
-        left: 270vw;
+        left: 70vw;
         background: linear-gradient(135deg, $Quire-color 40%, $SSS-color 100%);
 
 }
@@ -173,7 +177,7 @@ html {
 .sss_case_container {
         @include case_container();
         top: 0;
-        left: 370vw;
+        left: 70vw;
         background: linear-gradient(135deg, $SSS-color 30%, $KYH-color 100%);
 
 }
@@ -181,7 +185,7 @@ html {
 .kyh_case_container {
         @include case_container();
         top: 0;
-        left: 470vw;
+        left: 70vw;
         background: linear-gradient(135deg, $KYH-color 30%, $leftside-button 125%);
 
 }
@@ -228,7 +232,7 @@ html {
                 font-weight: 400;
                 text-transform: uppercase;
                 text-align: center;
-                color: #fcfcfc;
+                color: $white;
                 filter: drop-shadow(0px 6px 4px #619cff);
                 cursor: pointer;
 
@@ -242,6 +246,7 @@ html {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        background-color: $white;
 
         .selfie-img {
                 width: 25rem;
