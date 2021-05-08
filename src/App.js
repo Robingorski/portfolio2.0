@@ -99,7 +99,7 @@ function App() {
                 <p className="case_hashtags">#React, Tailwind, Firebase, Sanity, Next.js</p>
                 <p className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</p>
                 <div className="visit-button_container">
-                    <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
+                    <button className="visit-button" onClick={()=> window.open("https://kyh-onboarding.vercel.app/")}>Visit page</button>
                 </div>
             </div>
         </section>
