@@ -6,7 +6,7 @@ import Mouse from './component/Mouse';
 import Textwriter from './component/Textwriter';
 import logo from '../src/assets/pineapple.svg'
 import QS from '../src/assets/qs-screen.png';
-import Quire from '../src/assets/quire-screen.png';
+import GP from '../src/assets/gula_pizzerian.png';
 import SSS from '../src/assets/service-security-sweden.png';
 import KYH from '../src/assets/kyh-onboarding.png';
 import selfie from '../src/assets/selfie.jpg';
@@ -63,19 +63,19 @@ function App() {
                 <p className="case_hashtags">#HTML, #CSS, #Javascript, #Animations</p>
                 <p className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</p>
                 <div className="visit-button_container">
-                    <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
+                    <button className="visit-button" onClick={()=> window.open("https://agitated-poincare-f2c053.netlify.app/")}>Visit page</button>
                 </div>
             </div>
         </section>
 
         <section className="landingpage" ref={(e) => createPanelsRefs(e, 2)}>
-            <img className="landingpage_screen" src={Quire} alt="Quire page"/>
-            <div className="quire_case_container">
-                <h1 className="case_title">02 - Quire</h1>
-                <p className="case_hashtags">#HTML, #CSS, #Javascript, #Quill</p>
+            <img className="landingpage_screen" src={GP} alt="Gula Pizzeria page"/>
+            <div className="gp_case_container">
+                <h1 className="case_title">02 - Gulapizzeria</h1>
+                <p className="case_hashtags">#HTML, #CSS, #Javascript</p>
                 <p className="case_context">Customer wanted animations on there site. While i starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole site and added animations.</p>
                 <div className="visit-button_container">
-                    <button className="visit-button" onClick={()=> window.open("https://www.aftonbladet.se")}>Visit page</button>
+                    <button className="visit-button" onClick={()=> window.open("https://vigilant-aryabhata-6b6e7a.netlify.app/")}>Visit page</button>
                 </div>
             </div>
         </section>
