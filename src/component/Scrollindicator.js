@@ -6,11 +6,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 function Scrollindicator() {
-    const scroll_indicator_qs = useRef(null);
+/*     const scroll_indicator_qs = useRef(null);
     const scroll_indicator_gp = useRef(null);
     const scroll_indicator_sss = useRef(null);
     const scroll_indicator_kyh = useRef(null);
-    const scroll_indicator_about_me = useRef(null);
+    const scroll_indicator_about_me = useRef(null); */
     const scroll_indicator_mover = useRef(null);
     
     
@@ -35,14 +35,15 @@ function Scrollindicator() {
  
 
 return (
-    <div className="page_indicator_container">
+/*     <div className="page_indicator_container">
     <div ref={scroll_indicator_qs} className="page_indicator-qs"></div>
     <div ref={scroll_indicator_gp} className="page_indicator-gp"></div>
     <div ref={scroll_indicator_sss} className="page_indicator-sss"></div>
     <div ref={scroll_indicator_kyh} className="page_indicator-kyh"></div>
     <div ref={scroll_indicator_about_me} className="page_indicator-about_me"></div>
     <div ref={scroll_indicator_mover} className="mover"></div>
-    </div>
+    </div> */
+    <div ref={scroll_indicator_mover} className="mover"></div>
 );
 }
 
