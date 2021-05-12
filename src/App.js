@@ -14,7 +14,7 @@ import Scrollindicator from "./component/Scrollindicator";
 
 gsap.registerPlugin(ScrollTrigger);
 
-//npm.greensock.com/:_authToken={NPM_TOKEN}
+//npm.greensock.com/:_authToken=${NPM_TOKEN}
 
 
 function App() {
