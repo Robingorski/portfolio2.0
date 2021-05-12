@@ -19,16 +19,16 @@ const Pageindicator = () => {
     
 
   return (
-    <div className="App">
-      <div className="background">
+    <div>
+      <div>
         {items.map((i) => {
           return (
               <div className="page_indicator_container">
               <div className="page_indicator-qs"></div>
-              <div className="page_indicator-quire"></div>
+{/*               <div className="page_indicator-quire"></div>
               <div className="page_indicator-sss"></div>
               <div className="page_indicator-kyh"></div>
-              <div className="page_indicator-about_me"></div>
+              <div className="page_indicator-about_me"></div> */}
               <div className="mover"style={{transform: `translateX(${(index - i) * 40}px)`,}}/>
             </div>
           );

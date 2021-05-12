@@ -10,9 +10,11 @@ import GP from '../src/assets/gula_pizzerian.png';
 import SSS from '../src/assets/service-security-sweden.png';
 import KYH from '../src/assets/kyh-onboarding.png';
 import selfie from '../src/assets/selfie.jpg';
+import Scrollindicator from "./component/Scrollindicator";
 
 gsap.registerPlugin(ScrollTrigger);
 
+//npm.greensock.com/:_authToken={NPM_TOKEN}
 
 
 function App() {
@@ -47,13 +49,15 @@ function App() {
             </div>
             <Textwriter/>
             <Mouse/>
-            <div className="page_indicator_container">
+            <Scrollindicator/>
+{/*               <div className="page_indicator_container">
               <div className="page_indicator-qs"></div>
-              <div className="page_indicator-quire"></div>
+              <div className="page_indicator-gp"></div>
               <div className="page_indicator-sss"></div>
               <div className="page_indicator-kyh"></div>
               <div className="page_indicator-about_me"></div>
-            </div>
+            </div> */}
+            
         </section>
 
         <section className="landingpage" ref={(e) => createPanelsRefs(e, 1)}>
