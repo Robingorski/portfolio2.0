@@ -12,7 +12,7 @@ function Scrollindicator() {
     const scroll_indicator_kyh = useRef(null);
     const scroll_indicator_about_me = useRef(null); */
     const scroll_indicator_mover = useRef(null);
-    
+    const title = useRef(null);
     
 /*     useEffect(() => {
         gsap.fromTo(".mover", {y:-30, opacity:0}, {opacity:1 ,duration: 0.4, y:0,});

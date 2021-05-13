@@ -16,6 +16,12 @@ $rightside-button:#61FFD0;
 /* 100% right */
 $linkcolor: #434cfc;
 
+$breakpoint-small-phone: 320px;
+$breakpoint-phone: 600px;
+$breakpoint-laptop: 1300px;
+
+
+
 @mixin case_container {
         position: absolute;
         width: 30vw;
@@ -121,11 +127,11 @@ body {
 }
 
 .page_indicator_container {
-      /*   display: none; */
+        display: none;
         overflow: hidden;
         width: 100vw;
         height: 2vh;
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: center;
         z-index: 9999;
@@ -211,6 +217,7 @@ body {
         margin-top: 15%;
         font-size: 2rem;
         font-weight: 400;
+        text-align: center;
 }
 
 .case_context {
@@ -228,7 +235,8 @@ body {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        height: 15%;
+        height: 6%;
+        margin-top: 30%;
 
         .visit-button {
                 border: none;
@@ -250,12 +258,13 @@ body {
 
 
 .about-me {
-        width: 100vw;
+/*         width: 100vw;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         flex-wrap: wrap;
         background-color: $white;
+        flex-direction: unset;
 
         .selfie-img {
                 width: 25rem;
@@ -293,4 +302,55 @@ body {
                         font-weight: 500;
                 }
         }
+}
+
+@media (max-width: $breakpoint-small-phone) {
+
+}
+
+@media (max-width: $breakpoint-phone) {
+
+        .pin-spacer {
+                width: 0px !important;
+        }
+
+        .mouse-div {
+                margin-bottom: 10%;
+        }
+
+        .HW_container {
+                width: 90vw;
+                height: 75vh;
+
+                .HW_context {
+                        font-size: 2.5rem;
+                }
+
+                .HW_container_context {
+                        font-size: 2.5rem;
+                }
+        }
+
+        .landingpage {
+                height: 68vh;
+                bottom: 0;
+                width: 100vw;
+        }
+}
+
+@media (max-width: $breakpoint-laptop) {
+
+        .case_title {
+                margin-top: 20%;
+                font-size: 2rem;
+        }
+
+        .case_hashtags {
+                font-size: 1.6rem;
+        }
+
+        .case_context {
+                font-size: 1.6rem;
+        }
+
 }
