@@ -34,6 +34,12 @@ $breakpoint-laptop: 1300px;
         flex-direction: column;
 }
 
+@mixin case_container_phone {
+        position: unset;
+        width: 100vw;
+        height: 74vh;
+}
+
 @mixin hw_context {
         color: $black;
         font-size: 3rem;
@@ -315,7 +321,7 @@ body {
         }
 
         .mouse-div {
-                margin-bottom: 10%;
+                margin-bottom: 20%;
         }
 
         .HW_container {
@@ -332,9 +338,45 @@ body {
         }
 
         .landingpage {
-                height: 68vh;
-                bottom: 0;
-                width: 100vw;
+                /* height: 100vh; */
+               /*  bottom: 0; */
+                /* width: 100vw; */
+                .landingpage_screen {
+                        /* height: auto; */
+                        height: 26vh;
+                }
+
+                .qs_case_container {
+                        @include case_container_phone ();
+                }
+
+                .gp_case_container {
+                        @include case_container_phone ();
+                }
+                
+                .sss_case_container {
+                        @include case_container_phone ();
+                }
+                
+                .kyh_case_container {
+                        @include case_container_phone ();
+                }
+                
+                .case_title {
+                        margin-top: 10%;
+                }
+
+                .case_hashtags {
+                        margin-top: 10%;
+                }
+
+                .case_context {
+                        margin-top: 10%;
+                }
+
+                .visit-button_container {
+                        margin-top: 10%;
+                }
         }
 }
 
