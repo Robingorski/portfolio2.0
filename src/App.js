@@ -4,13 +4,19 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './App.scss';
 import Mouse from './component/Mouse';
 import Textwriter from './component/Textwriter';
+
 import logo from '../src/assets/pineapple.svg'
 import QS from '../src/assets/qs-screen.png';
 import GP from '../src/assets/gula_pizzerian.png';
 import SSS from '../src/assets/service-security-sweden.png';
 import KYH from '../src/assets/kyh-onboarding.png';
 import selfie from '../src/assets/selfie.jpg';
+import git_logo from '../src/assets/github-logo.svg';
+import linkedin_logo from '../src/assets/linkedin-logo.svg';
 /* import Scrollindicator from "./component/Scrollindicator"; */
+
+import AnimatedCursor from "react-animated-cursor";
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -46,13 +52,20 @@ function App() {
 
     return (
         <div  className="horizontal-page" ref={panelsContainer}>
+          <AnimatedCursor
+            innerSize={8}
+            outerSize={8}
+            color='39, 39, 39'
+            outerAlpha={.4}
+            innerScale={0.7}
+            outerScale={5}
+          />
         <section className="landingpage">
             <div className="pineapple-div">
                 <img className="pineapple" src={logo} alt="Pineapple-logo" />
             </div>
             <Textwriter/>
             <Mouse/>
-            
               <div className="page_indicator_container">
               <div className="page_indicator-qs"></div>
               <div className="page_indicator-gp"></div>
@@ -137,6 +150,10 @@ function App() {
           <p className="about-me_context">Send me a E-mail:</p>
           <a className="about-me_links" href="mailto:Contact@robingorski.com">Contact@robingorski.com</a>
         </div>
+      </div>
+      <div className="about-me_link-container">
+        <img className="about-me_link-icons" src={git_logo} alt="Github icon" />
+        <img className="about-me_link-icons" src={linkedin_logo} alt="Linkedin icon" />
       </div>
         </section>
         
