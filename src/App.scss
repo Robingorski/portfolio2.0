@@ -361,7 +361,7 @@ body {
                 .kyh_case_container {
                         @include case_container_phone ();
                 }
-                
+
                 .case_title {
                         margin-top: 10%;
                 }
@@ -377,6 +377,15 @@ body {
                 .visit-button_container {
                         margin-top: 10%;
                 }
+        }
+
+        .selfie-img {
+                width: 23 rem;
+        }
+
+        .about-me .about-me-text_container {
+                margin-left: 0%;
+                width: 30rem; 
         }
 }
 
