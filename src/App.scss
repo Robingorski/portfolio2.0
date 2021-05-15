@@ -85,7 +85,13 @@ body {
 
         .pineapple {
                 width: 5rem;
+                transition: 0.4s ease-in-out;
+
+                &:hover {
+                        transform: rotate(360deg);
+                }
         }
+
 }
 
 .landingpage {
@@ -178,6 +184,7 @@ body {
 }
 
 .case_hashtags {
+        width: 26vw;
         color: $black;
         margin-top: 15%;
         font-size: 2rem;
@@ -186,12 +193,11 @@ body {
 }
 
 .case_context {
+        width: 26vw;
         color: $black;
         margin-top: 15%;
         font-size: 2rem;
         font-weight: 400;
-        padding-right: 8%;
-        padding-left: 10%;
 }
 
 
@@ -247,7 +253,7 @@ body {
         }
 
         .about-me_context {
-                font-size: 1rem;
+                font-size: 1.2rem;
                 font-weight: 500;
                 color: $black;
         }
@@ -258,8 +264,7 @@ body {
                 .about-me_links {
                         color: $linkcolor;
                         text-decoration: none;
-                        font-size: 1rem;
-                        letter-spacing: 0.04rem;
+                        font-size: 1.2rem;
                         font-weight: 500;
                 }
         }
@@ -280,6 +285,7 @@ body {
                 animation: Link_animation 15s ease infinite;
                 -webkit-animation: Link_animation 15s ease infinite;
                 -moz-animation: Link_animation 15s ease infinite;
+                filter: drop-shadow(0px 0px 10px #2727277c);
                 
                 .about-me_link-icons {
                         width: 3rem;
@@ -391,10 +397,12 @@ body {
                 }
 
                 .case_hashtags {
+                        width: 80vw;
                         margin-top: 10%;
                 }
 
                 .case_context {
+                        width: 80vw;
                         margin-top: 10%;
                 }
 
