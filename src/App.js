@@ -3,8 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import './App.scss';
 import Mouse from './component/Mouse';
+import Arrow from './component/Arrow';
 import Textwriter from './component/Textwriter';
-
 import logo from '../src/assets/pineapple.svg'
 import QS from '../src/assets/qs-screen.png';
 import GP from '../src/assets/gula_pizzerian.png';
@@ -13,21 +13,13 @@ import KYH from '../src/assets/kyh-onboarding.png';
 import selfie from '../src/assets/selfie.jpg';
 import git_logo from '../src/assets/github-logo.svg';
 import linkedin_logo from '../src/assets/linkedin-logo.svg';
-/* import Scrollindicator from "./component/Scrollindicator"; */
-
 import AnimatedCursor from "react-animated-cursor";
 
-
 gsap.registerPlugin(ScrollTrigger);
-
-//npm.greensock.com/:_authToken=${NPM_TOKEN}
 
 
 function App() {
 
-    /* ------------------------- */
-
-    /* ------------------------- */
     const panels = useRef([]);
     const panelsContainer = useRef();
     const createPanelsRefs = (panel, index) => {
@@ -66,15 +58,14 @@ function App() {
             </div>
             <Textwriter/>
             <Mouse/>
+            <Arrow/>
               <div className="page_indicator_container">
               <div className="page_indicator-qs"></div>
               <div className="page_indicator-gp"></div>
               <div className="page_indicator-sss"></div>
               <div className="page_indicator-kyh"></div>
               <div className="page_indicator-about_me"></div>
-              {/* <Scrollindicator/> */}
             </div>
-            
         </section>
 
         <section className="landingpage" ref={(e) => createPanelsRefs(e, 1)}>
@@ -142,18 +133,13 @@ function App() {
           <p className="about-me_context">Hard skills - HTML, CSS, ES6.</p>
         </div>
         <div className="about-me-text_contact">
-          <p className="about-me_context">Check out my Github:</p>
-          <a className="about-me_links" href="https://github.com/Robingorski">www.Github.com/RobinGorski</a>
-          <p className="about-me_context">Or if you are intressed about what i've done erlier in my career, check my LinkedIn:</p>
-          <a className="about-me_links" href="https://www.linkedin.com/in/robin-gorski/">www.linkedin.com/in/Robin-Gorski</a>
-          <p className="about-me_context">Wanna collaborate with me?</p>
           <p className="about-me_context">Send me a E-mail:</p>
           <a className="about-me_links" href="mailto:Contact@robingorski.com">Contact@robingorski.com</a>
         </div>
       </div>
       <div className="about-me_link-container">
-        <img className="about-me_link-icons" src={git_logo} alt="Github icon" />
-        <img className="about-me_link-icons" src={linkedin_logo} alt="Linkedin icon" />
+        <img className="about-me_link-icons" src={git_logo} onClick={()=> window.open("https://github.com/Robingorski")} alt="Github icon" />
+        <img className="about-me_link-icons" src={linkedin_logo} onClick={()=> window.open("https://www.linkedin.com/in/robin-gorski/")} alt="Linkedin icon" />
       </div>
         </section>
         
@@ -163,10 +149,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-
-/*   // scroll down arrow animation (animation to the mouse)
-gsap.to(".arrow", {y: 12, ease: "power1.inOut", repeat: -1, yoyo: true}); */
