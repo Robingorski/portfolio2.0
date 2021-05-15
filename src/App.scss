@@ -368,18 +368,22 @@ body {
 
                 .qs_case_container {
                         @include case_container_phone ();
+                        background: linear-gradient(90deg, $QS-color 50%, $Quire-color 100%);
                 }
 
                 .gp_case_container {
                         @include case_container_phone ();
+                        background: linear-gradient(90deg, $Quire-color 40%, $SSS-color 100%);
                 }
                 
                 .sss_case_container {
                         @include case_container_phone ();
+                        background: linear-gradient(90deg, $SSS-color 30%, $KYH-color 100%);
                 }
                 
                 .kyh_case_container {
                         @include case_container_phone ();
+                        background: linear-gradient(90deg, $KYH-color 30%, $leftside-button 125%);
                 }
 
                 .case_title {
