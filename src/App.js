@@ -107,7 +107,7 @@ function App() {
         <section className="landingpage" ref={(e) => createPanelsRefs(e, 4)}>
             <img className="landingpage_screen" src={KYH} alt="KYH page"/>
             <div className="kyh_case_container">
-                <h1 className="case_title">04 - KYH</h1>
+                <h1 className="case_title">04 - KYH Onboarding</h1>
                 <p className="case_hashtags">#React, #Tailwind, #Firebase, #Sanity, #Next.js #Figma</p>
                 <p className="case_context">A onboarding website for newly admitted students to KYH. It was a team project in school where me and my team created the design, made clickable prototypes in figma and then build it in React. </p>
                 <div className="visit-button_container">
