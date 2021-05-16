@@ -73,7 +73,7 @@ function App() {
             <div className="qs_case_container">
                 <h1 className="case_title">01 - Quick Solution</h1>
                 <p className="case_hashtags">#HTML, #CSS, #Javascript, #Animations</p>
-                <p className="case_context">Everything started with the customer wanted animations on there website. While I starting to inspect how to apply the animations i saw a bad lighthouse score due to a lot of “deadcode”. So i re-coded the whole website and added animations to it.</p>
+                <p className="case_context">Everything started with the customer wanting animations on their website. While I started to inspect how to apply the animations, I saw a bad lighthouse score due to a lot of “dead code”. So I re-coded the whole website and added animations to it.</p>
                 <div className="visit-button_container">
                     <button className="visit-button" onClick={()=> window.open("https://agitated-poincare-f2c053.netlify.app/")}>Visit page</button>
                 </div>
@@ -85,7 +85,7 @@ function App() {
             <div className="gp_case_container">
                 <h1 className="case_title">02 - Gulapizzeria</h1>
                 <p className="case_hashtags">#HTML, #CSS, #Javascript #Google-Maps #Design, #Figma</p>
-                <p className="case_context">A new website for my local pizza restaurant. I had completly free hands on design and functions for the website. I decided to make it a single page website, with some easy self navigatet buttons for each menu section.</p>
+                <p className="case_context">A new website for my local pizza restaurant. I had completely free hands around design and functions for the website. I decided to make it a single page website, with some easy self navigate buttons for each menu section.</p>
                 <div className="visit-button_container">
                     <button className="visit-button" onClick={()=> window.open("https://vigilant-aryabhata-6b6e7a.netlify.app/")}>Visit page</button>
                 </div>
@@ -97,7 +97,7 @@ function App() {
             <div className="sss_case_container">
                 <h1 className="case_title">03 - Service Security Sweden</h1>
                 <p className="case_hashtags">#HTML, #CSS, #Javascript #Design</p>
-                <p className="case_context">A start-up company wanted a landingpage in a short period of time. They had no special design preference exept to make it look clean and simple.</p>
+                <p className="case_context">A start-up Company wanted a landing page with short notice. They had no special design preference other than to make it look clean and simple.</p>
                 <div className="visit-button_container">
                     <button className="visit-button" onClick={()=> window.open("http://www.servicesecurity.se/")}>Visit page</button>
                 </div>
@@ -109,7 +109,7 @@ function App() {
             <div className="kyh_case_container">
                 <h1 className="case_title">04 - KYH Onboarding</h1>
                 <p className="case_hashtags">#React, #Tailwind, #Firebase, #Sanity, #Next.js #Figma</p>
-                <p className="case_context">A onboarding website for newly admitted students to KYH. It was a team project in school where me and my team created the design, made clickable prototypes in figma and then build it in React. </p>
+                <p className="case_context">A onboarding website for newly admitted students to KYH. It was a team project in school where me and my team created the design, made clickable prototypes in Figma and then build it in React. </p>
                 <div className="visit-button_container">
                     <button className="visit-button" onClick={()=> window.open("https://kyh-onboarding.vercel.app/")}>Visit page</button>
                 </div>
