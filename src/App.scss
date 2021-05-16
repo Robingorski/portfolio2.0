@@ -11,6 +11,7 @@ $active-color: #61FFD0;
 $leftside-button:#619CFF;
 $rightside-button:#61FFD0;
 $linkcolor: #434cfc;
+$black-shadow: #2727277c;
 
 $breakpoint-small-phone: 320px;
 $breakpoint-phone: 600px;
@@ -25,12 +26,14 @@ $breakpoint-laptop: 1300px;
         display: flex;
         align-items: center;
         flex-direction: column;
+        filter: drop-shadow(-13px 0px 13px $black-shadow);
 }
 
 @mixin case_container_phone {
         position: unset;
         width: 100vw;
         height: 74vh;
+        filter: none;
 }
 
 @mixin hw_context {
@@ -118,6 +121,7 @@ body {
 
         .HW_context {
                 @include hw_context();
+     
         }
 }
 
@@ -149,7 +153,6 @@ body {
         top: 0;
         left: 70vw;
         background: linear-gradient(135deg, $QS-color 50%, $Quire-color 100%);
-
 }
 
 .gp_case_container {
@@ -157,7 +160,6 @@ body {
         top: 0;
         left: 70vw;
         background: linear-gradient(135deg, $Quire-color 40%, $SSS-color 100%);
-
 }
 
 .sss_case_container {
@@ -165,7 +167,6 @@ body {
         top: 0;
         left: 70vw;
         background: linear-gradient(135deg, $SSS-color 30%, $KYH-color 100%);
-
 }
 
 .kyh_case_container {
@@ -173,7 +174,6 @@ body {
         top: 0;
         left: 70vw;
         background: linear-gradient(135deg, $KYH-color 30%, $leftside-button 125%);
-
 }
 
 .case_title {
@@ -221,9 +221,7 @@ body {
                 text-transform: uppercase;
                 text-align: center;
                 color: $white;
-                filter: drop-shadow(0px 6px 4px #619cff);
-                cursor: pointer;
-
+                filter: drop-shadow(0px 6px 4px $leftside-button);
         }
 }
 
@@ -235,6 +233,7 @@ body {
 
         .selfie-img {
                 width: 25rem;
+                filter: drop-shadow(0px 0px 10px #2727277c);
         }
 
         .about-me-text_container {
@@ -285,7 +284,7 @@ body {
                 animation: Link_animation 15s ease infinite;
                 -webkit-animation: Link_animation 15s ease infinite;
                 -moz-animation: Link_animation 15s ease infinite;
-                filter: drop-shadow(0px 0px 10px #2727277c);
+                filter: drop-shadow(0px 0px 10px $black-shadow);
                 
                 .about-me_link-icons {
                         width: 3rem;
