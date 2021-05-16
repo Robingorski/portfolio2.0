@@ -13,7 +13,7 @@ function Textwriter() {
   }, []);
   
   useEffect(() => {
-    gsap.to(".HW_container_context", {duration: 8, delay: 2, text: "I'm a Front-end developer, with passion for design and animations.", ease: "none"});
+    gsap.to(".HW_container_context", {duration: 8, delay: 2, text: "I'm a Front-end developer, with a passion for design and animations.", ease: "none"});
   }, []);
 
 
