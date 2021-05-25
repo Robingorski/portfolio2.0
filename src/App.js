@@ -75,7 +75,7 @@ function App() {
                 <p className="case_hashtags">#HTML, #CSS, #Javascript, #Animations</p>
                 <p className="case_context">Everything started with the customer wanting animations on their website. While I started to inspect how to apply the animations, I saw a bad lighthouse score due to a lot of “dead code”. So I re-coded the whole website and added animations to it.</p>
                 <div className="visit-button_container">
-                    <button className="visit-button" onClick={()=> window.open("https://agitated-poincare-f2c053.netlify.app/")}>Visit page</button>
+                    <button className="visit-button" onClick={()=> window.open("https://agitated-quick-solution.netlify.app/")}>Visit page</button>
                 </div>
             </div>
         </section>
@@ -87,7 +87,7 @@ function App() {
                 <p className="case_hashtags">#HTML, #CSS, #Javascript #Google-Maps #Design, #Figma</p>
                 <p className="case_context">A new website for my local pizza restaurant. I had completely free hands around design and functions for the website. I decided to make it a single page website, with some easy self navigate buttons for each menu section.</p>
                 <div className="visit-button_container">
-                    <button className="visit-button" onClick={()=> window.open("https://vigilant-aryabhata-6b6e7a.netlify.app/")}>Visit page</button>
+                    <button className="visit-button" onClick={()=> window.open("https://vigilant-gulan.netlify.app/")}>Visit page</button>
                 </div>
             </div>
         </section>
