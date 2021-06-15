@@ -124,7 +124,7 @@ function App() {
           <p className="about-me_context"> - Hello stranger!</p>
         </div>
         <div>
-          <p className="about-me_context">I am currently studying Front End Development in Stockholm, Sweden.</p>
+          <p className="about-me_context">I am a Front End Development in Stockholm, Sweden.</p>
           <p className="about-me_context">Where I enjoy develop clean designs and smart solutions for the web. </p>
         </div>
         <div className="about-me-text_skills">
